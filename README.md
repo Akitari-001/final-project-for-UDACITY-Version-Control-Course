@@ -1,27 +1,25 @@
->**Note**: Please **fork** this Udacity repository so you have a **remote** repository in **your** GitHub account. Then you can clone the remote repository to your local machine. Later, as a part of the project, you will push your changes to the remote repository in your GitHub account.
+# Project content
 
+This project provides a program which <ins>shows information and statistics about bikeshare users</ins>, in dependence to your (user) input.
+You can search for a specific city, a month and a day of the week. If wanted, you can also see the raw data for your input.
 
-# Project Title
+## Information about how to use the project
 
-Describe what your project is about and what it does
+- Make sure you have python environment with numpy and pandas extention 
+- Copy the bikeshare.py
+- Provide 'chicago.csv', 'new_york_city.csv', 'washington.csv'.csv each with raw data with the following columns:
+     ,Start Time,End Time,Trip Duration,Start Station,End Station,User Type,Gender,Birth Year 
+- Start the bikeshare.py
+- If there are any problems first check the spelling of your .csv-files
 
-## Information about how to use your project
+## Contribution
 
-This could include:
-
-- Step-by-step instructions for installing or setting up your project.
-- Any software dependencies that need to be installed.
-- Instructions and examples for how to use your project, including any helpful code snippets.
-- Common issues and troubleshooting tips
-
-## Contribution guidelines
-
-If you welcome contributions, provide guidelines on how others can contribute to your project.
+Since this is a project to pass a specific course, this project will not be maintained in the future, so feel free to fork the project but be aware, that **contribution is not possible**.
 
 ## Credits
 
-It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
+This is a project to pass a UDACITY course - you can find a lot of usefull lessons [here](https://www.udacity.com).
 
 ## Date created
 
-Include the date you created this project and README file.
+13.02.2026
