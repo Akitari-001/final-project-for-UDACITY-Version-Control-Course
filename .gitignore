@@ -1,0 +1,6 @@
+# Created by venv; see https://docs.python.org/3/library/venv.html
+# csv are large files we don't need on the remote repository for this project
+*.csv
+
+# .venv is not needed in remote repository
+.venv
