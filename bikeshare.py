@@ -190,13 +190,13 @@ def raw_data(df):
     """Display raw data if this is wanted"""
 
     try:
-        whish_for_more = input(f"\nActual data set has {len(df)} rows of raw data.\nDo you want to see the first 5 rows of raw data? Please insert yes or no: ").lower()    # initial question if first rows of raw data is wanted
-        if whish_for_more == 'yes':
+        wish_for_more_raw_data = input(f"\nActual data set has {len(df)} rows of raw data.\nDo you want to see the first 5 rows of raw data? Please insert yes or no: ").lower()    # initial question if first rows of raw data is wanted
+        if wish_for_more_raw_data == 'yes':
             print(df.head())                                                                                                                                                # df.head() shows the first 5 rows
         else: return                                                                                                                                                        # leave function if no data shall be shown
         for i in range(5, len(df), 5):                                                                                                                                      # repeat the question if more data shall be shown (starts with row 6 and covers 5 rows every cycle) and stop if end of data is reached or used don't want to see more data
-            whish_for_more = input(f"\nThere are {len(df) - i} more rows of raw data.\nDo you want to see 5 more rows of raw data? Please insert yes or no: ").lower()
-            if whish_for_more == 'yes':
+            wish_for_more_raw_data = input(f"\nThere are {len(df) - i} more rows of raw data.\nDo you want to see 5 more rows of raw data? Please insert yes or no: ").lower()
+            if wish_for_more_raw_data == 'yes':
                     print(df[i:i+5])                                                                                                                                        # show next 5 rows, if it is whished
             else: break                                                                                                                                                     # leave, if no more data shall be shown
     except:
