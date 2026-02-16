@@ -8,7 +8,8 @@ You can search for a specific city, a month and a day of the week. If wanted, yo
 - Make sure you have python environment with numpy and pandas extention 
 - Copy the bikeshare.py
 - Provide 'chicago.csv', 'new_york_city.csv', 'washington.csv'.csv each with raw data with the following columns:
-     ,Start Time,End Time,Trip Duration,Start Station,End Station,User Type,Gender,Birth Year 
+     ,Start Time,End Time,Trip Duration,Start Station,End Station,User Type,Gender,Birth Year
+- You can also add input for other citys, but then you have to change the code in the bikeshare-py accordingly
 - Start the bikeshare.py
 - If there are any problems first check the spelling of your .csv-files
 
