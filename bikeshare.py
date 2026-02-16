@@ -194,10 +194,10 @@ def raw_data(df):
         if wish_for_more_raw_data == 'yes':
             print(df.head())                                                                                                                                                # df.head() shows the first 5 rows
         else: return                                                                                                                                                        # leave function if no data shall be shown
-        for i in range(5, len(df), 5):                                                                                                                                      # repeat the question if more data shall be shown (starts with row 6 and covers 5 rows every cycle) and stop if end of data is reached or used don't want to see more data
-            wish_for_more_raw_data = input(f"\nThere are {len(df) - i} more rows of raw data.\nDo you want to see 5 more rows of raw data? Please insert yes or no: ").lower()
+        for data_package in range(5, len(df), 5):                                                                                                                                      # repeat the question if more data shall be shown (starts with row 6 and covers 5 rows every cycle) and stop if end of data is reached or used don't want to see more data
+            wish_for_more_raw_data = input(f"\nThere are {len(df) - data_package} more rows of raw data.\nDo you want to see 5 more rows of raw data? Please insert yes or no: ").lower()
             if wish_for_more_raw_data == 'yes':
-                    print(df[i:i+5])                                                                                                                                        # show next 5 rows, if it is whished
+                    print(df[data_package:data_package+5])                                                                                                                                        # show next 5 rows, if it is whished
             else: break                                                                                                                                                     # leave, if no more data shall be shown
     except:
         print("Something went wrong with put out the raw_data")
